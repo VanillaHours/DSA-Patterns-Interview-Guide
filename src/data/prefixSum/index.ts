@@ -1,0 +1,1 @@
+export { prefixSumRoot } from './tree'

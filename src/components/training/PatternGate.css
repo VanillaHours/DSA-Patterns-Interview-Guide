@@ -1,0 +1,105 @@
+.pattern-gate {
+  margin-bottom: 2rem;
+  padding: 1.25rem 1.35rem;
+  border-radius: 14px;
+  border: 2px solid var(--text);
+  background: var(--surface);
+  scroll-margin-top: 1rem;
+}
+
+.gate-head {
+  margin-bottom: 1rem;
+}
+
+.gate-step {
+  display: inline-block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+  background: var(--text);
+  color: var(--bg);
+  margin-bottom: 0.5rem;
+}
+
+.gate-head h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.25rem;
+}
+
+.gate-sub {
+  margin: 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+  max-width: 38rem;
+  line-height: 1.45;
+}
+
+.gate-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.gate-label.warn {
+  color: #f87171;
+}
+
+.yes-signals {
+  margin-bottom: 1rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #4ade80 8%, var(--surface-2));
+  border: 1px solid color-mix(in srgb, #4ade80 25%, var(--border));
+}
+
+.yes-signals ul {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+}
+
+.not-pattern {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed var(--border);
+}
+
+.not-pattern table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.not-pattern th,
+.not-pattern td {
+  border: 1px solid var(--border);
+  padding: 0.4rem 0.55rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+.not-pattern th {
+  background: var(--surface-2);
+  font-size: 0.65rem;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.pattern-gate .decision-guide {
+  border: none;
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+
+.pattern-gate .mistake-autopsy {
+  margin-top: 1rem;
+}

@@ -1,0 +1,23 @@
+.ascii-decision {
+  margin: 0.75rem 0;
+  font-size: 0.82rem;
+}
+
+.ascii-decision summary {
+  cursor: pointer;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.ascii-decision-pre {
+  margin: 0.5rem 0 0;
+  padding: 0.75rem;
+  border-radius: 8px;
+  background: var(--code-bg);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  color: var(--hue-blue);
+  border: 1px solid var(--border);
+}

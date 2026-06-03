@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700&family=IBM+Plex+Mono:wght@400;500&display=swap');
+
+:root {
+  --bg: #0a0a0b;
+  --surface: #111113;
+  --surface-2: #18181b;
+  --text: #fafafa;
+  --muted: #71717a;
+  --border: #27272a;
+  --accent: #e4e4e7;
+  --code-bg: #09090b;
+  --code-fg: #d4d4d8;
+  --mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --sans: 'Instrument Sans', system-ui, sans-serif;
+
+  --hue-blue: #60a5fa;
+  --hue-teal: #2dd4bf;
+  --hue-green: #4ade80;
+  --hue-lime: #a3e635;
+  --hue-amber: #fbbf24;
+  --hue-orange: #fb923c;
+  --hue-purple: #c084fc;
+  --hue-pink: #f472b6;
+  --hue-slate: #a1a1aa;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: var(--sans);
+  background: var(--bg);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--hue-blue);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.2;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+strong {
+  color: #fff;
+  font-weight: 600;
+}

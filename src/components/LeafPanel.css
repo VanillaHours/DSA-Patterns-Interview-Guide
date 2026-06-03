@@ -1,0 +1,148 @@
+.leaf-panel {
+  margin: 0.5rem 0 0 1.25rem;
+  padding: 0.75rem;
+  border-radius: 12px;
+  border-left: 4px solid var(--node-accent);
+  background: color-mix(in srgb, var(--node-accent) 6%, var(--surface));
+}
+
+.leaf-banner {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  color: var(--node-accent);
+}
+
+.problem-card {
+  margin: 0.5rem 0;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  background: var(--surface);
+}
+
+.problem-card summary {
+  cursor: pointer;
+  padding: 0.55rem 0.75rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+  list-style: none;
+}
+
+.problem-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.lc-id {
+  font-weight: 700;
+  color: var(--node-accent);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+}
+
+.lc-title {
+  font-weight: 600;
+  font-size: 0.88rem;
+}
+
+.badge.must {
+  background: #ef4444;
+  color: #fff;
+  font-size: 0.65rem;
+  padding: 0.15rem 0.4rem;
+  border-radius: 4px;
+  font-weight: 700;
+}
+
+.companies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-left: auto;
+}
+
+.co {
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 0.12rem 0.35rem;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--node-accent) 20%, transparent);
+  color: var(--node-accent);
+}
+
+.problem-body {
+  padding: 0 0.75rem 0.75rem;
+  font-size: 0.85rem;
+}
+
+.line-change .label {
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.variation-code {
+  margin-top: 0.5rem;
+}
+
+.variation-code .label {
+  display: block;
+  font-weight: 700;
+  font-size: 0.78rem;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.variation-code pre {
+  margin: 0;
+  padding: 0.5rem 0.65rem;
+  border-radius: 6px;
+  background: var(--code-bg);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.4;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+}
+
+.lc-link {
+  display: inline-block;
+  margin-top: 0.4rem;
+  font-size: 0.8rem;
+  color: var(--node-accent);
+}
+
+.meta-block {
+  margin-top: 0.5rem;
+  font-size: 0.82rem;
+}
+
+.meta-block summary {
+  cursor: pointer;
+  font-weight: 600;
+  padding: 0.35rem 0;
+}
+
+.meta-block table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.78rem;
+}
+
+.meta-block th,
+.meta-block td {
+  border: 1px solid var(--border);
+  padding: 0.35rem 0.5rem;
+  text-align: left;
+}
+
+.interview-tip {
+  margin: 0.6rem 0 0;
+  padding: 0.5rem 0.65rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, #22c55e 12%, transparent);
+  font-size: 0.82rem;
+  border: 1px solid color-mix(in srgb, #22c55e 30%, transparent);
+}

@@ -1,0 +1,57 @@
+.path-trail {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  margin: 0 0 1rem;
+  padding: 0.65rem 0.85rem;
+  border-radius: 12px;
+  background: color-mix(in srgb, var(--accent) 12%, var(--surface-2));
+  border: 1px solid color-mix(in srgb, var(--accent) 35%, var(--border));
+  backdrop-filter: blur(8px);
+}
+
+.path-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.path-steps {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.25rem 0.35rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.path-step {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+}
+
+.path-chevron {
+  color: var(--muted);
+  font-weight: 700;
+}
+
+.path-step-num {
+  font-size: 0.65rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: var(--accent);
+  color: #0c0f14;
+}
+
+.path-step-title {
+  font-weight: 600;
+  color: var(--text);
+}

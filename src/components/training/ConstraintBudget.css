@@ -1,0 +1,135 @@
+.leaf-budget {
+  margin-bottom: 0.85rem;
+}
+
+.budget-mini-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.budget-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+}
+
+.budget-chip {
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.group-input { border-color: color-mix(in srgb, #3b82f6 40%, var(--border)); }
+.group-space { border-color: color-mix(in srgb, #a855f7 40%, var(--border)); }
+.group-structure { border-color: color-mix(in srgb, #22c55e 40%, var(--border)); }
+.group-goal { border-color: color-mix(in srgb, #f59e0b 40%, var(--border)); }
+
+/* Explorer */
+.budget-explorer {
+  margin-bottom: 2rem;
+  padding: 1.25rem;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+}
+
+.budget-explorer-head h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.budget-explorer-head p {
+  margin: 0 0 0.85rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+  max-width: 36rem;
+}
+
+.budget-picker {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+}
+
+.budget-pick {
+  font-size: 0.72rem;
+  padding: 0.3rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.budget-pick.on {
+  color: var(--text);
+  border-color: var(--accent);
+  background: color-mix(in srgb, var(--accent) 12%, transparent);
+}
+
+.budget-clear {
+  font-size: 0.72rem;
+  padding: 0.3rem 0.55rem;
+  border: none;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.budget-matches {
+  margin-top: 0.85rem;
+  padding-top: 0.85rem;
+  border-top: 1px dashed var(--border);
+}
+
+.match-count {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.budget-matches ul {
+  margin: 0.5rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.budget-matches li {
+  font-size: 0.82rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+}
+
+.budget-matches a {
+  font-weight: 600;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.budget-matches a:hover {
+  color: var(--accent);
+}
+
+.match-path {
+  display: block;
+  font-size: 0.68rem;
+  color: var(--muted);
+  margin-top: 0.1rem;
+}
+
+.no-match {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0;
+}

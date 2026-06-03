@@ -1,0 +1,131 @@
+.variation-helix {
+  margin-bottom: 0.85rem;
+}
+
+.helix-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.helix-sub {
+  margin: 0.2rem 0 0.5rem;
+  font-size: 0.75rem;
+  color: var(--muted);
+}
+
+.helix-chain {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0 1.25rem;
+  border-left: 2px solid var(--border);
+}
+
+.helix-node {
+  position: relative;
+  margin-bottom: 0.35rem;
+}
+
+.helix-node::before {
+  content: '';
+  position: absolute;
+  left: -1.35rem;
+  top: 0.85rem;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--border);
+  border: 2px solid var(--surface);
+}
+
+.helix-node.must::before {
+  background: #f59e0b;
+}
+
+.helix-node.active::before {
+  background: var(--node-accent, var(--accent));
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--node-accent, var(--accent)) 25%, transparent);
+}
+
+.helix-btn {
+  width: 100%;
+  text-align: left;
+  padding: 0.45rem 0.65rem;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+  color: var(--text);
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.25rem 0.65rem;
+  align-items: start;
+}
+
+.helix-btn:hover {
+  border-color: var(--node-accent, var(--accent));
+}
+
+.helix-num {
+  grid-row: span 2;
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  color: var(--muted);
+}
+
+.helix-prob {
+  font-size: 0.82rem;
+  font-weight: 600;
+}
+
+.helix-prob a {
+  color: var(--node-accent, var(--accent));
+  text-decoration: none;
+}
+
+.helix-star {
+  color: #f59e0b;
+  margin-left: 0.2rem;
+}
+
+.helix-delta {
+  grid-column: 2;
+  font-size: 0.72rem;
+  color: var(--muted);
+  font-family: var(--mono);
+}
+
+.helix-detail {
+  margin: 0.35rem 0 0.5rem 0.5rem;
+  padding: 0.55rem 0.65rem;
+  border-radius: 6px;
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  font-size: 0.78rem;
+}
+
+.helix-detail pre {
+  margin: 0.35rem 0 0;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  overflow-x: auto;
+}
+
+.helix-co {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+  margin-top: 0.35rem;
+}
+
+.helix-co span {
+  font-size: 0.58rem;
+  font-weight: 700;
+  padding: 0.08rem 0.3rem;
+  border-radius: 3px;
+  background: color-mix(in srgb, var(--node-accent, var(--accent)) 15%, transparent);
+}

@@ -1,0 +1,104 @@
+.topic-receipt-block {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+
+.receipt-prompt h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1rem;
+}
+
+.receipt-prompt p {
+  margin: 0 0 0.75rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.mark-done-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--text);
+  background: var(--text);
+  color: var(--bg);
+  font-weight: 700;
+  font-size: 0.82rem;
+  cursor: pointer;
+}
+
+.mark-done-btn:hover {
+  opacity: 0.9;
+}
+
+.done-badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  background: color-mix(in srgb, #22c55e 20%, transparent);
+  color: #4ade80;
+}
+
+.thermal-receipt {
+  max-width: 320px;
+  margin-top: 1rem;
+  padding: 1.25rem 1rem;
+  background: #f5f0e8;
+  color: #1a1a1a;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  border-radius: 4px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.35);
+}
+
+.receipt-title {
+  font-weight: 800;
+  font-size: 0.85rem;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.receipt-divider {
+  text-align: center;
+  opacity: 0.5;
+  margin: 0.35rem 0;
+}
+
+.receipt-line {
+  margin: 0.15rem 0;
+}
+
+.receipt-line.highlight {
+  font-weight: 700;
+}
+
+.receipt-line.small {
+  font-size: 0.65rem;
+  opacity: 0.85;
+}
+
+.receipt-section {
+  font-weight: 700;
+  margin-top: 0.35rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.06em;
+}
+
+.export-btn {
+  display: block;
+  width: 100%;
+  margin-top: 0.65rem;
+  padding: 0.4rem;
+  border: 1px dashed #999;
+  background: transparent;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  cursor: pointer;
+  color: #333;
+}
+
+.export-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}

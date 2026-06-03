@@ -1,0 +1,45 @@
+.ascii-tree-block {
+  margin-bottom: 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: var(--surface-2);
+  overflow: hidden;
+}
+
+.ascii-tree-block summary {
+  cursor: pointer;
+  padding: 0.75rem 1rem;
+  font-weight: 700;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  list-style: none;
+}
+
+.ascii-tree-block summary::-webkit-details-marker {
+  display: none;
+}
+
+.tree-icon {
+  font-size: 1.1rem;
+}
+
+.ascii-note {
+  margin: 0;
+  padding: 0 1rem 0.5rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.ascii-tree {
+  margin: 0;
+  padding: 1rem;
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.45;
+  overflow-x: auto;
+  background: var(--code-bg);
+  color: var(--hue-teal);
+  border-top: 1px solid var(--border);
+}

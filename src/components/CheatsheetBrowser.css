@@ -1,0 +1,187 @@
+.cheatsheet-browser {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cheat-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  position: sticky;
+  top: 0;
+  z-index: 15;
+}
+
+.cheat-stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1.25rem;
+  font-size: 0.82rem;
+  color: var(--muted);
+}
+
+.cheat-stats strong {
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.stat.highlight strong {
+  color: #f59e0b;
+}
+
+.cheat-filters {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.filter-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.82rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.expand-btn {
+  padding: 0.35rem 0.65rem;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--text);
+  font-size: 0.78rem;
+  cursor: pointer;
+}
+
+.expand-btn:hover {
+  border-color: var(--accent);
+}
+
+.must-know-block,
+.templates-block {
+  scroll-margin-top: 4rem;
+}
+
+.must-know-block h2,
+.templates-block h2 {
+  margin: 0 0 0.25rem;
+  font-size: 1.15rem;
+}
+
+.must-know-sub,
+.templates-sub {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.section-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.section-jump a {
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 0.25rem 0.55rem;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  text-decoration: none;
+  color: var(--text);
+  background: var(--surface);
+}
+
+.section-jump a:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.cheat-section {
+  margin-bottom: 0.5rem;
+}
+
+.section-details {
+  border-radius: 12px;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  overflow: hidden;
+}
+
+.depth-1 > .section-details {
+  border-width: 2px;
+}
+
+.depth-2 .section-details {
+  margin-left: 0.75rem;
+  border-style: dashed;
+}
+
+.depth-3 .section-details {
+  margin-left: 1.5rem;
+}
+
+.section-summary {
+  cursor: pointer;
+  padding: 0.65rem 1rem;
+  font-weight: 700;
+  font-size: 0.95rem;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: color-mix(in srgb, var(--accent) 5%, var(--surface));
+}
+
+.section-summary::-webkit-details-marker {
+  display: none;
+}
+
+.depth-1 > .section-details > .section-summary {
+  font-size: 1.05rem;
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface));
+}
+
+.section-step {
+  font-size: 0.6rem;
+  font-weight: 800;
+  padding: 0.1rem 0.35rem;
+  border-radius: 4px;
+  background: var(--surface-2);
+  color: var(--muted);
+  margin-left: auto;
+}
+
+.section-body {
+  padding: 0 1rem 1rem;
+}
+
+.section-hint {
+  font-size: 0.82rem;
+  color: var(--muted);
+  margin: 0.5rem 0;
+  padding-left: 0.65rem;
+  border-left: 2px solid var(--border);
+}
+
+.parent-tmpl-label {
+  font-size: 0.75rem;
+  color: var(--muted);
+  margin: 0.5rem 0 0.25rem;
+}
+
+.section-parent-template {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem;
+  border-radius: 8px;
+  background: color-mix(in srgb, var(--accent) 4%, transparent);
+}

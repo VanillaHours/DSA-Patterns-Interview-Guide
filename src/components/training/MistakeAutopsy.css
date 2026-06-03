@@ -1,0 +1,77 @@
+.mistake-autopsy {
+  margin-bottom: 0.85rem;
+}
+
+.autopsy-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.autopsy-card {
+  margin-bottom: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid color-mix(in srgb, #ef4444 35%, var(--border));
+  overflow: hidden;
+}
+
+.autopsy-cause {
+  padding: 0.4rem 0.65rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  background: color-mix(in srgb, #ef4444 12%, var(--surface));
+  color: #fca5a5;
+}
+
+.autopsy-grid {
+  display: grid;
+  gap: 0;
+}
+
+@media (min-width: 640px) {
+  .autopsy-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.autopsy-col {
+  padding: 0.5rem 0.65rem;
+  border-top: 1px solid var(--border);
+  font-size: 0.75rem;
+}
+
+.autopsy-col.fix {
+  background: color-mix(in srgb, #22c55e 6%, transparent);
+}
+
+.autopsy-head {
+  display: block;
+  font-size: 0.6rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-bottom: 0.25rem;
+}
+
+.autopsy-col pre {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  line-height: 1.4;
+  color: #fca5a5;
+}
+
+.autopsy-col code {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+}
+
+.autopsy-col.fix p {
+  margin: 0;
+  line-height: 1.4;
+}

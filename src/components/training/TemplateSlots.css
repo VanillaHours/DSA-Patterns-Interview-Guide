@@ -1,0 +1,72 @@
+.template-slots {
+  margin-bottom: 0.85rem;
+}
+
+.slots-label {
+  display: block;
+  font-size: 0.68rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.35rem;
+}
+
+.slotted-code {
+  margin: 0 0 0.5rem;
+  padding: 0.75rem 1rem;
+  border-radius: 8px;
+  background: var(--code-bg);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  line-height: 1.5;
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  white-space: pre-wrap;
+}
+
+.slot-hole {
+  display: inline;
+  padding: 0.05rem 0.35rem;
+  margin: 0 0.05rem;
+  border-radius: 4px;
+  background: color-mix(in srgb, var(--node-accent, var(--accent)) 25%, transparent);
+  color: var(--node-accent, var(--accent));
+  font-weight: 600;
+  border: 1px dashed var(--node-accent, var(--accent));
+}
+
+.slot-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.72rem;
+}
+
+.slot-table th {
+  text-align: left;
+  padding: 0.35rem 0.45rem;
+  background: var(--surface-2);
+  font-size: 0.62rem;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--border);
+}
+
+.slot-table td {
+  padding: 0.35rem 0.45rem;
+  border-bottom: 1px solid color-mix(in srgb, var(--border) 50%, transparent);
+  vertical-align: top;
+  line-height: 1.35;
+}
+
+.slot-lc {
+  font-family: var(--mono);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.slot-fill {
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  color: var(--code-fg);
+}
