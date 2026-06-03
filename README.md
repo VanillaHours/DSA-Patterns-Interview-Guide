@@ -19,7 +19,3 @@ npm install && npm run dev
 7. **Topic receipt** — mark complete, export summary  
 
 Plus: **family card grid**, **global constraint explorer**, **must-know table**.
-
-## Live
-
-Two Pointers — full training data for all 27 leaves.
