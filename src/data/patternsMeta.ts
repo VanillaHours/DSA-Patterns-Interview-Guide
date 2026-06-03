@@ -17,7 +17,7 @@ import { backtrackingRoot } from './backtracking/index'
 import { dpRoot } from './dynamicProgramming/index'
 
 const GITHUB =
-  'https://github.com/Yassir-aykhlf/DSA-Taxonomies'
+  'https://github.com/VanillaHours/DSA-Patterns-Interview-Guide'
 
 const PLACEHOLDER = (n: number, title: string): PatternMeta => ({
   id: `pattern-${n}`,
