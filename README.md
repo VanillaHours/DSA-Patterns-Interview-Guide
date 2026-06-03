@@ -1,6 +1,12 @@
 # DSA Cheatsheet — Interview Training Sheets
 
+[![GitHub Pages](https://img.shields.io/badge/Live-GitHub%20Pages-blue?logo=github)](https://vanillahours.github.io/DSA-Patterns-Interview-Guide/)
+
 Proactive revision from [Yassir-aykhlf/DSA-Taxonomies](https://github.com/Yassir-aykhlf/DSA-Taxonomies).
+
+## Live
+
+**https://vanillahours.github.io/DSA-Patterns-Interview-Guide/**
 
 ## Run
 
@@ -19,3 +25,13 @@ npm install && npm run dev
 7. **Topic receipt** — mark complete, export summary  
 
 Plus: **family card grid**, **global constraint explorer**, **must-know table**.
+
+## Patterns
+
+- Two Pointers
+- Hash Map / Set
+- Stack & Queue
+- Linked List
+- Sorting
+- Prefix Sum
+- Heap / Priority Queue
