@@ -1,0 +1,1 @@
+export { stringRoot } from './tree'

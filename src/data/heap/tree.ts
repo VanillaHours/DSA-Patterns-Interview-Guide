@@ -80,7 +80,7 @@ const advancedFamily = decision('advanced-step2', 'Identify Advanced Heap Techni
 
 // ── Root Decision (step 1) ───────────────────────────────────────
 
-export const HEAP_TREE: TaxonomyNode = decision('heap-step1', 'When to use a Heap / Priority Queue?', 'violet', 1,
+export const HEAP_TREE: TaxonomyNode = decision('heap-step1', 'When to use a Heap / Priority Queue?', 'purple', 1,
   'Is the problem asking for top K elements, scheduling, shortest paths, or custom priority?',
   [
     branch(['topK', 'kFreq', 'kWayMerge', 'median', 'streaming', 'oNLogK'],
@@ -100,5 +100,5 @@ export const HEAP_TREE: TaxonomyNode = decision('heap-step1', 'When to use a Hea
       'Custom comparator logic, lazy deletion of stale entries, or multi-heap coordination.',
       advancedFamily),
   ],
-  { ascii: 'HEAP' },
+  //{ ascii: 'HEAP' },
 )

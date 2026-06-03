@@ -1,0 +1,1 @@
+export { greedyRoot } from './tree'

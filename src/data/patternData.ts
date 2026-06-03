@@ -65,6 +65,87 @@ import { getEnhancement as getHeapLeaf } from './heap/leafEnhancements'
 import { FAMILY_META as HEAP_FAMILIES } from './heap/familyMeta'
 import { CONSTRAINTS as HEAP_CONSTRAINTS, CONSTRAINT_MAP as HEAP_CONSTRAINT_MAP } from './heap/constraints'
 
+// Binary Search
+import {
+  getDecisionEnhancement as getBSDecision,
+  getPatternGate as getBSGate,
+} from './binarySearch/decisionEnhancements'
+import { getEnhancement as getBSLeaf } from './binarySearch/leafEnhancements'
+import { FAMILY_META as BS_FAMILIES } from './binarySearch/familyMeta'
+import { CONSTRAINTS as BS_CONSTRAINTS, CONSTRAINT_MAP as BS_CONSTRAINT_MAP } from './binarySearch/constraints'
+
+// Tree Traversal
+import {
+  getDecisionEnhancement as getTTDecision,
+  getPatternGate as getTTGate,
+} from './treeTraversal/decisionEnhancements'
+import { getEnhancement as getTTLeaf } from './treeTraversal/leafEnhancements'
+import { FAMILY_META as TT_FAMILIES } from './treeTraversal/familyMeta'
+import { CONSTRAINTS as TT_CONSTRAINTS, CONSTRAINT_MAP as TT_CONSTRAINT_MAP } from './treeTraversal/constraints'
+
+// Graph Traversal
+import {
+  getDecisionEnhancement as getGTDecision,
+  getPatternGate as getGTGate,
+} from './graphTraversal/decisionEnhancements'
+import { getEnhancement as getGTLeaf } from './graphTraversal/leafEnhancements'
+import { FAMILY_META as GT_FAMILIES } from './graphTraversal/familyMeta'
+import { CONSTRAINTS as GT_CONSTRAINTS, CONSTRAINT_MAP as GT_CONSTRAINT_MAP } from './graphTraversal/constraints'
+
+// Matrix Traversal
+import {
+  getDecisionEnhancement as getMTDecision,
+  getPatternGate as getMTGate,
+} from './matrixTraversal/decisionEnhancements'
+import { getEnhancement as getMTLeaf } from './matrixTraversal/leafEnhancements'
+import { FAMILY_META as MT_FAMILIES } from './matrixTraversal/familyMeta'
+import { CONSTRAINTS as MT_CONSTRAINTS, CONSTRAINT_MAP as MT_CONSTRAINT_MAP } from './matrixTraversal/constraints'
+
+// String Traversal
+import {
+  getDecisionEnhancement as getSTDecision,
+  getPatternGate as getSTGate,
+} from './stringTraversal/decisionEnhancements'
+import { getEnhancement as getSTLeaf } from './stringTraversal/leafEnhancements'
+import { FAMILY_META as ST_FAMILIES } from './stringTraversal/familyMeta'
+import { CONSTRAINTS as ST_CONSTRAINTS, CONSTRAINT_MAP as ST_CONSTRAINT_MAP } from './stringTraversal/constraints'
+
+// Array Traversal
+import {
+  getDecisionEnhancement as getATDecision,
+  getPatternGate as getATGate,
+} from './arrayTraversal/decisionEnhancements'
+import { getEnhancement as getATLeaf } from './arrayTraversal/leafEnhancements'
+import { FAMILY_META as AT_FAMILIES } from './arrayTraversal/familyMeta'
+import { CONSTRAINTS as AT_CONSTRAINTS, CONSTRAINT_MAP as AT_CONSTRAINT_MAP } from './arrayTraversal/constraints'
+
+// Greedy
+import {
+  getDecisionEnhancement as getGDecision,
+  getPatternGate as getGGate,
+} from './greedy/decisionEnhancements'
+import { getEnhancement as getGLeaf } from './greedy/leafEnhancements'
+import { FAMILY_META as G_FAMILIES } from './greedy/familyMeta'
+import { CONSTRAINTS as G_CONSTRAINTS, CONSTRAINT_MAP as G_CONSTRAINT_MAP } from './greedy/constraints'
+
+// Backtracking
+import {
+  getDecisionEnhancement as getBTDecision,
+  getPatternGate as getBTGate,
+} from './backtracking/decisionEnhancements'
+import { getEnhancement as getBTLeaf } from './backtracking/leafEnhancements'
+import { FAMILY_META as BT_FAMILIES } from './backtracking/familyMeta'
+import { CONSTRAINTS as BT_CONSTRAINTS, CONSTRAINT_MAP as BT_CONSTRAINT_MAP } from './backtracking/constraints'
+
+// Dynamic Programming
+import {
+  getDecisionEnhancement as getDPDecision,
+  getPatternGate as getDPGate,
+} from './dynamicProgramming/decisionEnhancements'
+import { getEnhancement as getDPLeaf } from './dynamicProgramming/leafEnhancements'
+import { FAMILY_META as DP_FAMILIES } from './dynamicProgramming/familyMeta'
+import { CONSTRAINTS as DP_CONSTRAINTS, CONSTRAINT_MAP as DP_CONSTRAINT_MAP } from './dynamicProgramming/constraints'
+
 export interface PatternData {
   getDecisionEnhancement: (id: string) => DecisionEnhancement | undefined
   getPatternGate: () => PatternGateEnhancement
@@ -130,6 +211,78 @@ const REGISTRY: Record<string, PatternData> = {
     familyMeta: HEAP_FAMILIES,
     constraints: HEAP_CONSTRAINTS,
     constraintMap: HEAP_CONSTRAINT_MAP,
+  },
+  'binary-search': {
+    getDecisionEnhancement: getBSDecision,
+    getPatternGate: getBSGate,
+    getLeafEnhancement: getBSLeaf,
+    familyMeta: BS_FAMILIES,
+    constraints: BS_CONSTRAINTS,
+    constraintMap: BS_CONSTRAINT_MAP,
+  },
+  'tree-traversal': {
+    getDecisionEnhancement: getTTDecision,
+    getPatternGate: getTTGate,
+    getLeafEnhancement: getTTLeaf,
+    familyMeta: TT_FAMILIES,
+    constraints: TT_CONSTRAINTS,
+    constraintMap: TT_CONSTRAINT_MAP,
+  },
+  'graph-traversal': {
+    getDecisionEnhancement: getGTDecision,
+    getPatternGate: getGTGate,
+    getLeafEnhancement: getGTLeaf,
+    familyMeta: GT_FAMILIES,
+    constraints: GT_CONSTRAINTS,
+    constraintMap: GT_CONSTRAINT_MAP,
+  },
+  'matrix-traversal': {
+    getDecisionEnhancement: getMTDecision,
+    getPatternGate: getMTGate,
+    getLeafEnhancement: getMTLeaf,
+    familyMeta: MT_FAMILIES,
+    constraints: MT_CONSTRAINTS,
+    constraintMap: MT_CONSTRAINT_MAP,
+  },
+  'string-traversal': {
+    getDecisionEnhancement: getSTDecision,
+    getPatternGate: getSTGate,
+    getLeafEnhancement: getSTLeaf,
+    familyMeta: ST_FAMILIES,
+    constraints: ST_CONSTRAINTS,
+    constraintMap: ST_CONSTRAINT_MAP,
+  },
+  'array-traversal': {
+    getDecisionEnhancement: getATDecision,
+    getPatternGate: getATGate,
+    getLeafEnhancement: getATLeaf,
+    familyMeta: AT_FAMILIES,
+    constraints: AT_CONSTRAINTS,
+    constraintMap: AT_CONSTRAINT_MAP,
+  },
+  greedy: {
+    getDecisionEnhancement: getGDecision,
+    getPatternGate: getGGate,
+    getLeafEnhancement: getGLeaf,
+    familyMeta: G_FAMILIES,
+    constraints: G_CONSTRAINTS,
+    constraintMap: G_CONSTRAINT_MAP,
+  },
+  backtracking: {
+    getDecisionEnhancement: getBTDecision,
+    getPatternGate: getBTGate,
+    getLeafEnhancement: getBTLeaf,
+    familyMeta: BT_FAMILIES,
+    constraints: BT_CONSTRAINTS,
+    constraintMap: BT_CONSTRAINT_MAP,
+  },
+  'dynamic-programming': {
+    getDecisionEnhancement: getDPDecision,
+    getPatternGate: getDPGate,
+    getLeafEnhancement: getDPLeaf,
+    familyMeta: DP_FAMILIES,
+    constraints: DP_CONSTRAINTS,
+    constraintMap: DP_CONSTRAINT_MAP,
   },
 }
 
