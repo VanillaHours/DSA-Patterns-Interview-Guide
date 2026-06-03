@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { patterns, REPO_URL } from './data/patternsMeta'
 import { getTopicComplete } from './components/training/TopicReceipt'
 import { PatternPage } from './components/PatternPage'
@@ -6,7 +6,13 @@ import './App.css'
 
 function App() {
   const [activeId, setActiveId] = useState('two-pointers')
+  const [theme, setTheme] = useState(() => localStorage.getItem('theme') || 'light')
   const active = patterns.find((p) => p.id === activeId) ?? patterns[0]
+
+  useEffect(() => {
+    document.documentElement.setAttribute('data-theme', theme)
+    localStorage.setItem('theme', theme)
+  }, [theme])
 
   return (
     <div className="app">
@@ -54,6 +60,15 @@ function App() {
             )
           })}
         </nav>
+
+        <button
+          type="button"
+          className="theme-toggle"
+          onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
+        >
+          <span className="icon">{theme === 'dark' ? '☀️' : '🌙'}</span>
+          {theme === 'dark' ? 'Light mode' : 'Dark mode'}
+        </button>
       </aside>
 
       <main className="main">

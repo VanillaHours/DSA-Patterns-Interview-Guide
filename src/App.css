@@ -6,6 +6,8 @@
 .sidebar {
   width: 260px;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
   padding: 1.25rem 1rem;
   border-right: 1px solid var(--border);
   background: var(--surface);
@@ -104,7 +106,7 @@ nav {
 }
 
 .nav-item.complete .nav-order {
-  color: #4ade80;
+  color: var(--green);
 }
 
 .nav-item.active {
@@ -137,13 +139,38 @@ nav {
 }
 
 .live {
-  background: #22c55e33;
-  color: #4ade80;
+  background: var(--green-bg);
+  color: var(--green);
 }
 
 .soon {
   background: var(--surface-2);
   color: var(--muted);
+}
+
+.theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  width: 100%;
+  margin-top: auto;
+  padding: 0.45rem 0.55rem;
+  border: none;
+  border-radius: 8px;
+  background: transparent;
+  color: var(--muted);
+  cursor: pointer;
+  font-size: 0.78rem;
+  font-family: var(--sans);
+}
+
+.theme-toggle:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+.theme-toggle .icon {
+  font-size: 1rem;
 }
 
 .main {
