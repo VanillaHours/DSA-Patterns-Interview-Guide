@@ -1,0 +1,1 @@
+export { trieRoot } from './tree'

@@ -15,9 +15,10 @@ import { arrayRoot } from './arrayTraversal/index'
 import { greedyRoot } from './greedy/index'
 import { backtrackingRoot } from './backtracking/index'
 import { dpRoot } from './dynamicProgramming/index'
+import { trieRoot } from './trie/index'
 
 const GITHUB =
-  'https://github.com/VanillaHours/DSA-Patterns-Interview-Guide'
+  'https://github.com/Yassir-aykhlf/DSA-Taxonomies'
 
 const PLACEHOLDER = (n: number, title: string): PatternMeta => ({
   id: `pattern-${n}`,
@@ -172,8 +173,16 @@ export const patterns: PatternMeta[] = [
     tagline: '1D state, substring/subsequence, 2D/multi-dim, state compression, DP optimization — one template per sub-pattern.',
     root: dpRoot,
   },
-  PLACEHOLDER(17, 'Union Find'),
-  PLACEHOLDER(18, 'Trie'),
+  {
+    id: 'trie',
+    title: 'Trie',
+    order: 17,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/14.%20Trie.md`,
+    tagline: 'Basic trie ops, dictionary apps, auto-complete, pattern matching, advanced structures, optimization — one template per sub-pattern.',
+    root: trieRoot,
+  },
+  PLACEHOLDER(18, 'Union Find'),
   PLACEHOLDER(19, 'Bitmask'),
   PLACEHOLDER(20, 'Monotonic Stack'),
   PLACEHOLDER(21, 'Interval'),

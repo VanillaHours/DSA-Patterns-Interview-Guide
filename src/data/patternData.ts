@@ -146,6 +146,15 @@ import { getEnhancement as getDPLeaf } from './dynamicProgramming/leafEnhancemen
 import { FAMILY_META as DP_FAMILIES } from './dynamicProgramming/familyMeta'
 import { CONSTRAINTS as DP_CONSTRAINTS, CONSTRAINT_MAP as DP_CONSTRAINT_MAP } from './dynamicProgramming/constraints'
 
+// Trie
+import {
+  getDecisionEnhancement as getTrieDecision,
+  getPatternGate as getTrieGate,
+} from './trie/decisionEnhancements'
+import { getEnhancement as getTrieLeaf } from './trie/leafEnhancements'
+import { FAMILY_META as TRIE_FAMILIES } from './trie/familyMeta'
+import { CONSTRAINTS as TRIE_CONSTRAINTS, CONSTRAINT_MAP as TRIE_CONSTRAINT_MAP } from './trie/constraints'
+
 export interface PatternData {
   getDecisionEnhancement: (id: string) => DecisionEnhancement | undefined
   getPatternGate: () => PatternGateEnhancement
@@ -283,6 +292,14 @@ const REGISTRY: Record<string, PatternData> = {
     familyMeta: DP_FAMILIES,
     constraints: DP_CONSTRAINTS,
     constraintMap: DP_CONSTRAINT_MAP,
+  },
+  trie: {
+    getDecisionEnhancement: getTrieDecision,
+    getPatternGate: getTrieGate,
+    getLeafEnhancement: getTrieLeaf,
+    familyMeta: TRIE_FAMILIES,
+    constraints: TRIE_CONSTRAINTS,
+    constraintMap: TRIE_CONSTRAINT_MAP,
   },
 }
 
