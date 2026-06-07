@@ -17,6 +17,8 @@ import { backtrackingRoot } from './backtracking/index'
 import { dpRoot } from './dynamicProgramming/index'
 import { trieRoot } from './trie/index'
 import { dcRoot } from './divideConquer/index'
+import { ufRoot } from './unionFind/index'
+import { bmRoot } from './bitManipulation/index'
 
 const GITHUB =
   'https://github.com/Yassir-aykhlf/DSA-Taxonomies'
@@ -192,12 +194,29 @@ export const patterns: PatternMeta[] = [
     tagline: 'Classic D&C, array/string D&C, tree/graph D&C — one template per sub-pattern.',
     root: dcRoot,
   },
-  PLACEHOLDER(19, 'Union Find'),
+  {
+    id: 'union-find',
+    title: 'Union Find',
+    order: 19,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/15.%20Union%20Find.md`,
+    tagline: 'Basic ops, graph problems, advanced apps, and DSU variations — one template per sub-pattern.',
+    root: ufRoot,
+  },
   PLACEHOLDER(20, 'Bitmask'),
   PLACEHOLDER(21, 'Monotonic Stack'),
   PLACEHOLDER(22, 'Interval'),
   PLACEHOLDER(23, 'Math / Number Theory'),
-  PLACEHOLDER(24, 'Bit Manipulation'),
+  {
+    id: 'bit-manipulation',
+    title: 'Bit Manipulation',
+    order: 24,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/16.%20Bit%20Manipulation.md`,
+    tagline: 'Basic ops, math, XOR/AND/OR apps, bitmask DP, and bit tricks — one template per sub-pattern.',
+    root: bmRoot,
+  },
+
 ]
 
 export const REPO_URL = GITHUB

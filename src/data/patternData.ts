@@ -164,6 +164,24 @@ import { getEnhancement as getDCLeaf } from './divideConquer/leafEnhancements'
 import { FAMILY_META as DC_FAMILIES } from './divideConquer/familyMeta'
 import { CONSTRAINTS as DC_CONSTRAINTS, CONSTRAINT_MAP as DC_CONSTRAINT_MAP } from './divideConquer/constraints'
 
+// Union Find
+import {
+  getDecisionEnhancement as getUFDecision,
+  getPatternGate as getUFGate,
+} from './unionFind/decisionEnhancements'
+import { getEnhancement as getUFLeaf } from './unionFind/leafEnhancements'
+import { FAMILY_META as UF_FAMILIES } from './unionFind/familyMeta'
+import { CONSTRAINTS as UF_CONSTRAINTS, CONSTRAINT_MAP as UF_CONSTRAINT_MAP } from './unionFind/constraints'
+
+// Bit Manipulation
+import {
+  getDecisionEnhancement as getBMDecision,
+  getPatternGate as getBMGate,
+} from './bitManipulation/decisionEnhancements'
+import { getEnhancement as getBMLeaf } from './bitManipulation/leafEnhancements'
+import { FAMILY_META as BM_FAMILIES } from './bitManipulation/familyMeta'
+import { CONSTRAINTS as BM_CONSTRAINTS, CONSTRAINT_MAP as BM_CONSTRAINT_MAP } from './bitManipulation/constraints'
+
 export interface PatternData {
   getDecisionEnhancement: (id: string) => DecisionEnhancement | undefined
   getPatternGate: () => PatternGateEnhancement
@@ -317,6 +335,22 @@ const REGISTRY: Record<string, PatternData> = {
     familyMeta: DC_FAMILIES,
     constraints: DC_CONSTRAINTS,
     constraintMap: DC_CONSTRAINT_MAP,
+  },
+  'union-find': {
+    getDecisionEnhancement: getUFDecision,
+    getPatternGate: getUFGate,
+    getLeafEnhancement: getUFLeaf,
+    familyMeta: UF_FAMILIES,
+    constraints: UF_CONSTRAINTS,
+    constraintMap: UF_CONSTRAINT_MAP,
+  },
+  'bit-manipulation': {
+    getDecisionEnhancement: getBMDecision,
+    getPatternGate: getBMGate,
+    getLeafEnhancement: getBMLeaf,
+    familyMeta: BM_FAMILIES,
+    constraints: BM_CONSTRAINTS,
+    constraintMap: BM_CONSTRAINT_MAP,
   },
 }
 
