@@ -182,6 +182,33 @@ import { getEnhancement as getBMLeaf } from './bitManipulation/leafEnhancements'
 import { FAMILY_META as BM_FAMILIES } from './bitManipulation/familyMeta'
 import { CONSTRAINTS as BM_CONSTRAINTS, CONSTRAINT_MAP as BM_CONSTRAINT_MAP } from './bitManipulation/constraints'
 
+// Design Pattern
+import {
+  getDecisionEnhancement as getDP2Decision,
+  getPatternGate as getDP2Gate,
+} from './designPattern/decisionEnhancements'
+import { getEnhancement as getDP2Leaf } from './designPattern/leafEnhancements'
+import { FAMILY_META as DP2_FAMILIES } from './designPattern/familyMeta'
+import { CONSTRAINTS as DP2_CONSTRAINTS, CONSTRAINT_MAP as DP2_CONSTRAINT_MAP } from './designPattern/constraints'
+
+// Bitmask
+import {
+  getDecisionEnhancement as getBM2Decision,
+  getPatternGate as getBM2Gate,
+} from './bitmask/decisionEnhancements'
+import { getEnhancement as getBM2Leaf } from './bitmask/leafEnhancements'
+import { FAMILY_META as BM2_FAMILIES } from './bitmask/familyMeta'
+import { CONSTRAINTS as BM2_CONSTRAINTS, CONSTRAINT_MAP as BM2_CONSTRAINT_MAP } from './bitmask/constraints'
+
+// Monotonic Stack
+import {
+  getDecisionEnhancement as getMSDecision,
+  getPatternGate as getMSGate,
+} from './monotonicStack/decisionEnhancements'
+import { getEnhancement as getMSLeaf } from './monotonicStack/leafEnhancements'
+import { FAMILY_META as MS_FAMILIES } from './monotonicStack/familyMeta'
+import { CONSTRAINTS as MS_CONSTRAINTS, CONSTRAINT_MAP as MS_CONSTRAINT_MAP } from './monotonicStack/constraints'
+
 export interface PatternData {
   getDecisionEnhancement: (id: string) => DecisionEnhancement | undefined
   getPatternGate: () => PatternGateEnhancement
@@ -351,6 +378,30 @@ const REGISTRY: Record<string, PatternData> = {
     familyMeta: BM_FAMILIES,
     constraints: BM_CONSTRAINTS,
     constraintMap: BM_CONSTRAINT_MAP,
+  },
+  'design-pattern': {
+    getDecisionEnhancement: getDP2Decision,
+    getPatternGate: getDP2Gate,
+    getLeafEnhancement: getDP2Leaf,
+    familyMeta: DP2_FAMILIES,
+    constraints: DP2_CONSTRAINTS,
+    constraintMap: DP2_CONSTRAINT_MAP,
+  },
+  'bitmask': {
+    getDecisionEnhancement: getBM2Decision,
+    getPatternGate: getBM2Gate,
+    getLeafEnhancement: getBM2Leaf,
+    familyMeta: BM2_FAMILIES,
+    constraints: BM2_CONSTRAINTS,
+    constraintMap: BM2_CONSTRAINT_MAP,
+  },
+  'monotonic-stack': {
+    getDecisionEnhancement: getMSDecision,
+    getPatternGate: getMSGate,
+    getLeafEnhancement: getMSLeaf,
+    familyMeta: MS_FAMILIES,
+    constraints: MS_CONSTRAINTS,
+    constraintMap: MS_CONSTRAINT_MAP,
   },
 }
 

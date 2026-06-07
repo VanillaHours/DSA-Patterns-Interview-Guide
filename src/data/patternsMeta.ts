@@ -19,17 +19,12 @@ import { trieRoot } from './trie/index'
 import { dcRoot } from './divideConquer/index'
 import { ufRoot } from './unionFind/index'
 import { bmRoot } from './bitManipulation/index'
+import { dpRoot as dpRoot2 } from './designPattern/index'
+import { bmRoot as bmRoot2 } from './bitmask/index'
+import { msRoot } from './monotonicStack/index'
 
 const GITHUB =
   'https://github.com/Yassir-aykhlf/DSA-Taxonomies'
-
-const PLACEHOLDER = (n: number, title: string): PatternMeta => ({
-  id: `pattern-${n}`,
-  title,
-  order: n,
-  available: false,
-  tagline: 'Coming soon — same one-template mind map format.',
-})
 
 export const patterns: PatternMeta[] = [
   {
@@ -203,10 +198,25 @@ export const patterns: PatternMeta[] = [
     tagline: 'Basic ops, graph problems, advanced apps, and DSU variations — one template per sub-pattern.',
     root: ufRoot,
   },
-  PLACEHOLDER(20, 'Bitmask'),
-  PLACEHOLDER(21, 'Monotonic Stack'),
-  PLACEHOLDER(22, 'Interval'),
-  PLACEHOLDER(23, 'Math / Number Theory'),
+  {
+    id: 'bitmask',
+    title: 'Bitmask',
+    order: 20,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/20.%20Bitmask.md`,
+    tagline: 'Subset representation via bits, bit ops, mask iteration, and built-in bit functions — one template per sub-pattern.',
+    root: bmRoot2,
+  },
+  {
+    id: 'monotonic-stack',
+    title: 'Monotonic Stack',
+    order: 21,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/21.%20Monotonic%20Stack.md`,
+    tagline: 'Increasing/decreasing stacks, next/previous element queries — one template per sub-pattern.',
+    root: msRoot,
+  },
+
   {
     id: 'bit-manipulation',
     title: 'Bit Manipulation',
@@ -215,6 +225,15 @@ export const patterns: PatternMeta[] = [
     githubPath: `${GITHUB}/blob/main/Taxonomies/16.%20Bit%20Manipulation.md`,
     tagline: 'Basic ops, math, XOR/AND/OR apps, bitmask DP, and bit tricks — one template per sub-pattern.',
     root: bmRoot,
+  },
+  {
+    id: 'design-pattern',
+    title: 'Design Pattern',
+    order: 25,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/19.%20Design%20Pattern.md`,
+    tagline: 'Data structure design, system components, UI patterns, and GOF patterns — one template per sub-pattern.',
+    root: dpRoot2,
   },
 
 ]
