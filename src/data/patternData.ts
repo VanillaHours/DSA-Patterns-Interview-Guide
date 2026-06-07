@@ -155,6 +155,15 @@ import { getEnhancement as getTrieLeaf } from './trie/leafEnhancements'
 import { FAMILY_META as TRIE_FAMILIES } from './trie/familyMeta'
 import { CONSTRAINTS as TRIE_CONSTRAINTS, CONSTRAINT_MAP as TRIE_CONSTRAINT_MAP } from './trie/constraints'
 
+// Divide and Conquer
+import {
+  getDecisionEnhancement as getDCDecision,
+  getPatternGate as getDCGate,
+} from './divideConquer/decisionEnhancements'
+import { getEnhancement as getDCLeaf } from './divideConquer/leafEnhancements'
+import { FAMILY_META as DC_FAMILIES } from './divideConquer/familyMeta'
+import { CONSTRAINTS as DC_CONSTRAINTS, CONSTRAINT_MAP as DC_CONSTRAINT_MAP } from './divideConquer/constraints'
+
 export interface PatternData {
   getDecisionEnhancement: (id: string) => DecisionEnhancement | undefined
   getPatternGate: () => PatternGateEnhancement
@@ -300,6 +309,14 @@ const REGISTRY: Record<string, PatternData> = {
     familyMeta: TRIE_FAMILIES,
     constraints: TRIE_CONSTRAINTS,
     constraintMap: TRIE_CONSTRAINT_MAP,
+  },
+  'divide-conquer': {
+    getDecisionEnhancement: getDCDecision,
+    getPatternGate: getDCGate,
+    getLeafEnhancement: getDCLeaf,
+    familyMeta: DC_FAMILIES,
+    constraints: DC_CONSTRAINTS,
+    constraintMap: DC_CONSTRAINT_MAP,
   },
 }
 

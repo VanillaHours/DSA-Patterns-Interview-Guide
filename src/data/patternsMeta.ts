@@ -16,6 +16,7 @@ import { greedyRoot } from './greedy/index'
 import { backtrackingRoot } from './backtracking/index'
 import { dpRoot } from './dynamicProgramming/index'
 import { trieRoot } from './trie/index'
+import { dcRoot } from './divideConquer/index'
 
 const GITHUB =
   'https://github.com/Yassir-aykhlf/DSA-Taxonomies'
@@ -182,12 +183,21 @@ export const patterns: PatternMeta[] = [
     tagline: 'Basic trie ops, dictionary apps, auto-complete, pattern matching, advanced structures, optimization — one template per sub-pattern.',
     root: trieRoot,
   },
-  PLACEHOLDER(18, 'Union Find'),
-  PLACEHOLDER(19, 'Bitmask'),
-  PLACEHOLDER(20, 'Monotonic Stack'),
-  PLACEHOLDER(21, 'Interval'),
-  PLACEHOLDER(22, 'Math / Number Theory'),
-  PLACEHOLDER(23, 'Bit Manipulation'),
+  {
+    id: 'divide-conquer',
+    title: 'Divide and Conquer',
+    order: 18,
+    available: true,
+    githubPath: `${GITHUB}/blob/main/Taxonomies/15.%20Divide%20and%20Conquer.md`,
+    tagline: 'Classic D&C, array/string D&C, tree/graph D&C — one template per sub-pattern.',
+    root: dcRoot,
+  },
+  PLACEHOLDER(19, 'Union Find'),
+  PLACEHOLDER(20, 'Bitmask'),
+  PLACEHOLDER(21, 'Monotonic Stack'),
+  PLACEHOLDER(22, 'Interval'),
+  PLACEHOLDER(23, 'Math / Number Theory'),
+  PLACEHOLDER(24, 'Bit Manipulation'),
 ]
 
 export const REPO_URL = GITHUB
